@@ -48,6 +48,22 @@ I’m sharing it here mostly to keep things organized and maybe to help someone 
 
 ---
 
+### Mermaid Diagram (rendered on GitHub)
+
+```mermaid
+flowchart TD
+    ESP[ESP32-C3 Super Mini]
+
+    ESP --> ADC["ADS1115 (ADC)"];
+    ESP --> DAC["MCP4725 (DAC)"];
+    ESP --> IO["PCF8575 + 4x4 Keypad"];
+    ESP --> LCD["LCD 20x4 (I²C)"];
+    ESP --> FAN["Cooling Fan (80x80x15, 2-pin)"];
+
+    ADC --> MEAS[Current / Voltage Measurements];
+```
+---
+
 ## ⚡ Features
 
 - Online logging with MQTT  
