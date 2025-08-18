@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../../projects/esp32/current_source"
+		},
+		{
+			"name": "firmware",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
