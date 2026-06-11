@@ -54,6 +54,8 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+~kicad:*.lck
+\#auto_saved_files#
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -115,11 +117,17 @@ Temporary Items
 .gcc-flags.json
 .pio
 
+### Secrets ###
+secrets.h
+
+### Auto-generated (contain absolute paths) ###
+firmware/.vscode/launch.json
+firmware/.vscode/c_cpp_properties.json
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 

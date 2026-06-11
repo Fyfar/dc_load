@@ -11,6 +11,7 @@
 #include <WiFi.h>
 #include <Wire.h>
 #include <config.h>
+#include "secrets.h"
 
 #include <vector>
 
@@ -19,10 +20,6 @@ enum class MenuItem {
     FOUR_WIRE,
     CUTOFF_VOLTAGE
 };
-
-constexpr const char *ssid = "YOUR_WIFI_SSID";
-constexpr const char *password = "YOUR_WIFI_PASSWORD";
-constexpr const char *mqttServer = "YOUR_MQTT_SERVER_IP";
 
 constexpr float KELVIN_DIVIDER = 7.10234;
 constexpr float VOLTAGE_DIVIDER = 10.0;
